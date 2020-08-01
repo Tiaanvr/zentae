@@ -24,6 +24,7 @@
     padding: 20px 180px;
     @include for-tablet-landscape-down{
         top: 110px;
+        overflow: hidden;
         padding: 20px 30px;
     };
     .heading {
