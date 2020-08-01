@@ -1,0 +1,197 @@
+<img width="100%" src="../../assets/icons/group.png" class="home-image"/>
+<div class="home-info">
+    <div class="content-container">
+        <h1 class="heading">Accelerate your ERP Environment</h1>
+        <p class="paragrah">Founded on the principles of building strong partnerships with our clients, we strive to ensure that together we can deliver the efficiencies and cost savings which the products facilitate.</p>
+        <br><br>
+        <div class="home-info-button">
+            <button (click)="routingService.setActiveItem('Products')" class="button-primary">Our Products</button>
+            <button pageScroll href="#contact" class="button-secondary">Contact Us</button>
+        </div>
+    </div>
+</div>
+<div class="our-products">
+    <div class="content-container">
+
+        <h2 class="description">
+            Our Products
+        </h2>
+        <br>
+        <p class="description">ZENTAE Consulting is a certified SAP Concur implementation partner.  We offer products in the domains of Travel, Expense and Invoice Management.</p>
+        <br>
+        <div class="description">
+            <img src="../../assets/icons/sap-concur.png">
+        </div>
+        <div class="product-container">
+            <div class="product-items">
+                <div class="content image-height">
+                    <img height="60" src="../../assets/icons/concur-travel.png">
+                </div>
+                <h3 class="content">
+                    Travel
+                </h3>
+                <p class="content-paragrath">
+                    Simplify the corporate travel booking experience and control company costs.
+                </p>
+                <div class="content-button">
+                    <button (click)="routeToProducts(0)" class="button-primary">
+                        Read More
+                    </button>
+                </div>
+            </div>
+            <div class="product-items">
+                <div class="content image-height">
+                    <img height="40px" src="../../assets/icons/concur-expense.png">
+                </div>
+                <h3 class="content">
+                    Expense
+                </h3>
+                <p class="content-paragrath">
+                    Automate expense management and take control of spending, no matter where it happens.
+                </p>
+                <div class="content-button">
+                    <button (click)="routeToProducts(1)" class="button-primary">
+                        Read More
+                    </button>
+                </div>
+            </div>
+            <div class="product-items">
+                <div class="content image-height">
+                    <img height="60px" src="../../assets/icons/concur-invoice.png">
+                </div>
+                <h3 class="content">
+                    Invoice
+                </h3>
+                <p class="content-paragrath">
+                    Reduce the average cost of processing a single invoice by more than 80%. Automate invoice processing while increasing insight and control.
+                </p>
+                <div class="content-button">
+                    <button (click)="routeToProducts(2)" class="button-primary">
+                        Read More
+                    </button>
+                </div>
+            </div>
+            <div class="product-items-invisible">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="our-services">
+    <div class="content-container">
+        <h2 class="description">
+            Our Services
+        </h2>
+        <br>
+        <p class="description">Our services are aimed at ensuring successful software implementations for our clients from start to finish.</p>
+        <br>
+        <!-- Desktop -->
+        <div class="service-wrapper">
+            <div (click)="routeToServices(0)" class="service-block">
+                <img class="service-image" [src]="services[0].image">
+                <div class="service-text-alignment">
+                    <div class="service-heading">{{services[0].title}}</div>
+                    <p>{{services[0].paragrath}}</p>
+                </div>
+            </div>
+            <div (click)="routeToServices(1)" class="service-block">
+                <img class="service-image" [src]="services[1].image">
+                <div class="service-text-alignment">
+                    <div class="service-heading">{{services[1].title}}</div>
+                    <p>{{services[1].paragrath}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-wrapper">
+            <div (click)="routeToServices(2)" class="service-block">
+                <img class="service-image" [src]="services[2].image">
+                <div class="service-text-alignment">
+                    <div class="service-heading">{{services[2].title}}</div>
+                    <p>{{services[2].paragrath}}</p>
+                </div>
+            </div>
+            <div (click)="routeToServices(3)" class="service-block">
+                <img class="service-image" [src]="services[3].image">
+                <div class="service-text-alignment">
+                    <div class="service-heading">{{services[3].title}}</div>
+                    <p>{{services[3].paragrath}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-wrapper">
+            <div (click)="routeToServices(4)" class="service-block">
+                <img class="service-image" [src]="services[4].image">
+                <div class="service-text-alignment">
+                    <div class="service-heading">{{services[4].title}}</div>
+                    <p>{{services[4].paragrath}}</p>
+                </div>
+            </div>
+            <div (click)="routeToServices(5)" class="service-block">
+                <img class="service-image" [src]="services[5].image">
+                <div class="service-text-alignment">
+                    <div class="service-heading">{{services[5].title}}</div>
+                    <p>{{services[5].paragrath}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile -->
+    <div class="service-wrapper-mobile">
+        <div *ngFor="let item of services; let i = index" class="service-items">
+            <div class="content image-height">
+                <img height="60" [src]="item.image">
+            </div>
+            <h3 class="content-heading">
+                {{item.title}}
+            </h3>
+            <p class="content-paragrath">
+                {{item.paragrath}}
+            </p>
+            <div class="content-button">
+                <button (click)="routeToServicesAccordion(i)" class="button-blue-border">
+                    Read More
+                </button>
+            </div>
+        </div>
+        <div class="service-items-invisible">
+        </div>
+    </div>
+</div>
+<div class="our-customers">
+    <div class="content-container verticle-scroll about-desktop">
+        <img class="customer-icons" src="../../assets/icons/anglo-american.png">
+        <img class="customer-icons" src="../../assets/icons/anglo-platinum.png">
+        <img class="customer-icons" src="../../assets/icons/forevermark.png">
+        <img class="customer-icons" src="../../assets/icons/absa.png">
+        <img class="customer-icons" src="../../assets/icons/sereti.png">
+        <img class="customer-icons" src="../../assets/icons/bmw.png">
+        <img class="customer-icons" src="../../assets/icons/kumba-iron-ore.png">
+    </div>
+    
+    <div class="slide-7 about-mobile">
+        <div id="slideshow">
+            <div class="container">
+                <section style="height: 90px;"><img class="customer-icons" src="../../assets/icons/anglo-american.png"></section>
+                <section style="height: 90px;"><img class="customer-icons" src="../../assets/icons/anglo-platinum.png"></section>
+                <section style="height: 90px;"><img class="customer-icons" src="../../assets/icons/forevermark.png"></section>
+                <section style="height: 90px;"><img class="customer-icons" src="../../assets/icons/absa.png"></section>
+                <section style="height: 90px;"><img class="customer-icons" src="../../assets/icons/sereti.png"></section>
+                <section style="height: 90px;"><img class="customer-icons" src="../../assets/icons/bmw.png"></section>
+                <section style="height: 70px;"><img class="customer-icons" src="../../assets/icons/kumba-iron-ore.png"></section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map">
+    <div class="content-container">
+        <h2 class="description">
+            Our Services
+        </h2>
+        <br>
+        <p class="description">Our services are aimed at ensuring successful software implementations for our clients from start to finish.</p>
+        <br>
+    </div>
+    <div class="image-container">
+        <img class="image" src="../../assets/icons/map.png">
+    </div>
+</div>

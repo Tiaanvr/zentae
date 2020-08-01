@@ -1,0 +1,87 @@
+@import './global-styles/variables.scss';
+@import './global-styles/mixins.scss';
+
+.button-primary {
+    border-radius: 15px;
+    height: 30px;
+    width: 103px;
+    font-size: 12px;
+    background-color: $color-white;
+    color: $color-text-primary;
+    border: 1px solid $color-button-border;
+    font-family: "Lato", sans-serif;
+    font-weight: 700px;
+    cursor: pointer;
+}
+
+.button-secondary {
+    border-radius: 15px;
+    height: 30px;
+    width: 103px;
+    font-size: 12px;
+    background-color: $color-light-blue;
+    color: $color-text-primary;
+    border: 1px solid $color-button-border;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button-blue-border {
+    border-radius: 15px;
+    height: 30px;
+    width: 103px;
+    font-size: 12px;
+    background-color: transparent;
+    color: $color-light-blue;
+    border: 1px solid $color-light-blue;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+h1 {
+    height: 28px;
+    font-family: $lato-font;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-white;
+}
+
+h2 {
+    height: 28px;
+    font-family: $lato-font;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-text-primary;
+    display: inline;
+}
+
+h3 {
+    height: 28px;
+    font-family: $lato-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-text-primary;
+    display: inline;
+}
+
+p {
+    font-family: $lato-font;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.content-container {
+    width: 780px;
+    margin: 0px auto;
+    @include for-tablet-landscape-down {
+        width: 100%;
+    }
+}
+
+.small-line {
+    height: 20px;
+    border-bottom: 2px solid $color-light-blue;
+    width: 20px;
+}

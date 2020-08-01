@@ -1,0 +1,105 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.burger-bar {
+    display: none;
+    @include for-tablet-landscape-down{
+        display: block!important;
+    }
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    width: 300px;
+    z-index: 9999;
+
+    .menu__mobile {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px;
+
+        &_button {
+            position: relative;
+            height: 26px;
+            width: 30px;
+            cursor: pointer;
+            background-color: transparrent;
+                
+            &.active {
+                span {
+                    opacity: 0;
+                }
+                &.menu__mobile_button:before,
+                &.menu__mobile_button:after  {
+                    top: 40%;
+                }
+                &.menu__mobile_button:before {
+                    transform: rotate(45deg);
+                }
+                &.menu__mobile_button:after {
+                    transform: rotate(-45deg);
+                }
+            }
+    
+            span,
+            &:before, 
+            &:after {
+                display: block;
+                position: absolute;
+                height: 3px;
+                width: 100%;
+                background-color: $color-light-blue;
+                border-radius: 3px;
+                opacity: 1;
+            }
+            &:before, 
+            &:after {
+                content: "";
+                transition: top .35s cubic-bezier(.23,1,.32,1),transform .35s cubic-bezier(.23,1,.32,1);
+            }
+        
+            span {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:before {
+                top: 3px;
+            }
+            &:after {
+                top: calc(100% - 6px);
+            }
+        }
+    }
+    .burger-item-wrapper {
+        position: fixed;
+        height: 100%;
+        background-color: $color-button-border;
+        width: 100%;
+        z-index: 999;
+        .burger-items {
+            color: $color-white;
+            border-left: 2px solid transparent;
+            padding-left: 40px;
+            height: 30px;
+            font-size: 12px;
+            font-family: $lato-font;
+            cursor: pointer;
+            padding-top: 20px;
+        }
+        .burger-active {
+            border-left: 2px solid $color-light-blue;
+        }
+    }
+
+}
+
+.burger-bar-open {
+    position: fixed;
+    background-color: $color-button-border;
+}
+.burger-bar-closed {
+    position: absolute;
+    background-color: transparent;
+}
+
+
+ 

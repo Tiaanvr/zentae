@@ -1,0 +1,16 @@
+@mixin for-tablet-portrait-down {
+    @media (max-width: 769px) {
+        @content;
+    }    
+}
+
+@mixin for-tablet-landscape-down {
+    @media (max-width: 1024px) {
+        @content;
+    }    
+}
+
+@mixin center-align {
+    display: flex;
+    justify-content: center;
+}

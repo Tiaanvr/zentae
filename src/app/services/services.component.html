@@ -1,0 +1,357 @@
+<img width="100%" src="../../assets/icons/group.png" class="about-image"/>
+<div class="services-info">
+    <div class="content-container">
+        <h1 id="serviceFocus" class="heading">Our Services</h1>
+        <p class="paragrah">
+            Our services are aimed at ensuring successful software implementations for our clients from start to finish.
+        </p>
+        <br><br>
+    </div>
+</div>
+<div class="service-under">
+    <div class="service-detail-block">
+        <div class="hide-mobile">
+            <div class="service-tabs-wrapper">
+                <div (click)="routingService.setActiveServices(0)" [ngClass]="{'active': routingService.activeItemServices === 0}" class="service-tabs">
+                    <img class="icon" src="../../assets/icons/group-37.png">
+                </div>
+                <div (click)="routingService.setActiveServices(1)" [ngClass]="{'active': routingService.activeItemServices === 1}" class="service-tabs">
+                    <img class="icon" src="../../assets/icons/group-19.png">
+                </div>
+                <div (click)="routingService.setActiveServices(2)" [ngClass]="{'active': routingService.activeItemServices === 2}" class="service-tabs">
+                    <img class="icon" src="../../assets/icons/group-27.png">
+                </div>
+                <div (click)="routingService.setActiveServices(3)" [ngClass]="{'active': routingService.activeItemServices === 3}" class="service-tabs">
+                    <img class="icon" src="../../assets/icons/group-25.png">
+                </div>
+                <div (click)="routingService.setActiveServices(4)" [ngClass]="{'active': routingService.activeItemServices === 4}" class="service-tabs">
+                    <img class="icon" src="../../assets/icons/group-29.png">
+                </div>
+                <div (click)="routingService.setActiveServices(5)" [ngClass]="{'active': routingService.activeItemServices === 5}" class="service-tabs">
+                    <img class="icon" src="../../assets/icons/group-18.png">
+                </div>
+            </div>
+
+            <div *ngIf="routingService.activeItemServices === 0" class="tabs-content">
+                <h1 class="heading">Project Management</h1>
+                <br>
+                <p>
+                    At ZENTAE Consulting, we have qualified project managers that will ensure successful project delivery from start to finish. Often there are multiple independent parties with their own interests involved with the implementation of large-scale SAP solutions. This is the No. 1 contributor to siloed thinking and non-coherent decisions in projects
+                    <br><br>
+                    Our project managers will manage project deliverables across all delivery channels. We will also ensure that any project design/implementation decisions are made with the project and client’s best interests in mind. ZENTAE Consulting will also evaluate the entire value chain of the new SAP solution to ensure processes are optimized for maximum return on investment.
+                    <br><br>
+                    In summary, our service offerings to you are:
+                    <br><br>
+                </p>
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Business Case Development</span></li>
+                        <li><span>Overall Project Management</span></li>
+                        <li><span>Process Engineering/Re-Engineering</span></li>
+                        <li><span>Solution Analysis & Optimization</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div *ngIf="routingService.activeItemServices === 1" class="tabs-content">
+                <h1 class="heading">SAP Software Solutions</h1>
+                <br>
+                <p>
+                    ZENTAE Consulting is a certified implementation partner for SAP Concur. We offer products in the domains of Travel, Expense and Invoice Management. All products are cloud-based SaaS solutions with the aim to offer enhanced control, process efficiency and cost reduction for business areas which historically have lacked these value-adds.
+                    <br><br>
+                </p>
+                <h2>Travel</h2>
+                <br>
+                <div class="small-line"></div>
+                <br>
+                <p>SAP Concur Travel is an integrated online travel booking tool that unites all travel information across the enterprise. Data from travelers’ favorite apps, credit cards, and vendors are all integrated into one environment. With all the data in one place, it’s easier to monitor spending, gain insights, ensure compliance, and maintain duty of care.</p>
+                <br>
+                <h2>Expense</h2>
+                <br>
+                <div class="small-line"></div>
+                <br>
+                <p>With SAP Concur Expense Management, Finance regains control and granular visibility of expenses, reduce fraud and errors, and significantly reduce processing time. SAP Concur Expense utilizes state of the art technology to ensure faster expense submissions and reimbursements. A solution that puts both the employee and the company first.</p>
+                <br>
+                <h2>Invoice</h2>
+                <br>
+                <div class="small-line"></div>
+                <br>
+                <p>SAP Concur Invoice is a smart Purchase Request/Order and Invoice Management solution. SAP Concur Invoice automates the invoice management process by helping businesses intelligently capture, validate, and pay vendor invoices at a fraction of the time.  All of this from one familiar environment. Your SAP Concur environment.</p>
+            </div>
+
+            <div *ngIf="routingService.activeItemServices === 2" class="tabs-content">
+                <h1 class="heading">Integration</h1>
+                <br>
+                <p>
+                    Integration, whether it is via FTP, API, PaaS or custom-built connectors, is the backbone of any system functioning as expected. Without accurate data, any system looses its value proposition to an organization.  At ZENTAE, we strive to make integration easy, functional and cost effective. Our consultants work together with your team to architect a solution that allows your organization to be agile and respond to ever evolving business requirements. Our solutions are fully scalable and will grow alongside your business.
+                    <br><br>
+                    Ask us more about our services:
+                    <br><br>
+                </p>
+
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Integration Platform Assessment</span></li>
+                        <li><span>Cost/Benefit Analysis.</span></li>
+                        <li><span>Integration Readiness Assessment.</span></li>
+                        <li><span>Migration Planning & Execution.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div *ngIf="routingService.activeItemServices === 3" class="tabs-content">
+                <h1 class="heading">Managed Services</h1>
+                <br>
+                <p>
+                    Organizations tend to outsource support services for SaaS solutions due to the ever-increasing demand to reduce overheads, the technical expertise required to support SaaS solutions and the basic premise that system support is not core business for most organizations.
+                    <br><br>
+                    Our proven managed services framework is built on the principles of customer satisfaction, data transparency, lean & efficient processes and ensuring best practices. ZENTAE Consulting operates and manages SAP Concur solutions for customers in multiple countries across different industries. Who better to manage and support your SaaS solution than the implementation partner that built it.
+                    <br><br>
+                    We offer managed services for:
+                    <br><br>
+                </p>
+
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>All SAP Concur Products (Travel, Expense and Invoice)</span></li>
+                        <li><span>Integration Platform (FTP, API, native or PaaS)</span></li>
+                        <li><span>SAP Concur BI (IBM Cognos)</span></li>
+                        <li><span>Solution-Oriented Change Management</span></li>
+                    </ul>
+                </div>
+
+                <br>
+                <p>
+                    Our managed services framework includes:
+                    <br><br>
+                </p>
+
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Full integration with your service desk solution based for ticket-handover/ticket-binding.</span></li>
+                        <li><span>A comprehensive service catalogue.</span></li>
+                        <li><span>A flexible SLA framework.</span></li>
+                        <li><span>Up to 24/7 time-zone coverage.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div *ngIf="routingService.activeItemServices === 4" class="tabs-content">
+                <h1 class="heading">Training & Change Management</h1>
+                <br>
+                <p>
+                    A software solution only realizes its full potential when the intended user base interacts with the solution as expected and its intended value can be delivered. Immersive training and change Management ensures that this user base is equipped with the relevant knowledge and insight required to achieve this expectation.
+                    <br><br>
+                    ZENTAE Consulting offers bespoke training and change management initiatives in the SAP solutions domain to ensure a successful go-live for all end-users.
+                    <br><br>
+                    Ask us more about our services:  
+                    <br><br>
+                </p>
+
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Training and Change Management Strategies</span></li>
+                        <li><span>Communication Templates (Digital & Print)</span></li>
+                        <li><span>Classroom Training (End-User, Super-User, Administrative Function)</span></li>
+                        <li><span>Interactive Digital Training</span></li>
+                        <li><span>Refresher Training Courses</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div *ngIf="routingService.activeItemServices === 5" class="tabs-content">
+                <h1 class="heading">Business Process Optimization</h1>
+                <br>
+                <p>
+                    A software solution can maximize its return on investment if the business processes that are core to the solution are optimized. In order to fully optimize any software solution’s core and supporting processes, the processes firstly need to be understood, documented, analyzed and then finally optimized.
+                    <br><br>
+                    ZENTAE Consulting business analysts use state-of-the-art process documentation tools, leveraging off BPMN (Business Process Model and Notation) principles to document and understand your organization’s processes. Using our years of experience in the relevant business cycles such as Procure to Pay, Travel & Expense Management and Order to Cash, ZENTAE Consulting will optimize these processes to fully support your new SAP software solution.
+                    <br><br>
+                    Ask us more about our services:
+                    <br><br>
+                </p>
+
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Business Process Optimization</span></li>
+                        <li><span>Business Process Automation</span></li>
+                        <li><span>Business Process Standardization</span></li>
+                        <li><span>Process Adoption and Change Management</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="display-mobile">
+            <div (click)="routingService.openAccordionServices(0)" class="service-detail-accordion">
+                <div class="accordion-heading">
+                    <img [ngClass]="{'accordion-open': routingService.activeAccordionServices === 0, 'accordion-close': routingService.activeAccordionServices !== 0}" src="../../assets/icons/accordion.png">
+                    Project Managment
+                </div>
+            </div>
+            <div *ngIf="routingService.activeAccordionServices === 0" class="service-detail-accordion-content">
+                <p>
+                    At ZENTAE Consulting, we have qualified project managers that will ensure successful project delivery from start to finish. Often there are multiple independent parties with their own interests involved with the implementation of large-scale SAP solutions. This is the No. 1 contributor to siloed thinking and non-coherent decisions in projects
+                    <br><br>
+                    Our project managers will manage project deliverables across all delivery channels. We will also ensure that any project design/implementation decisions are made with the project and client’s best interests in mind. ZENTAE Consulting will also evaluate the entire value chain of the new SAP solution to ensure processes are optimized for maximum return on investment.
+                    <br><br>
+                    In summary, our service offerings to you are:
+                    <br><br>
+                </p>
+
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Business Case Development</span></li>
+                        <li><span>Overall Project Management</span></li>
+                        <li><span>Process Engineering/Re-Engineering</span></li>
+                        <li><span>Solution Analysis & Optimization</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div (click)="routingService.openAccordionServices(1)" class="service-detail-accordion">
+                <div class="accordion-heading">
+                    <img [ngClass]="{'accordion-open': routingService.activeAccordionServices === 1, 'accordion-close': routingService.activeAccordionServices !== 1}" src="../../assets/icons/accordion.png">
+                    SAP Software Solutions
+                </div>
+            </div>
+            <div *ngIf="routingService.activeAccordionServices === 1" class="service-detail-accordion-content">
+                <p>
+                    ZENTAE Consulting is a certified implementation partner for SAP Concur. We offer products in the domains of Travel, Expense and Invoice Management. All products are cloud-based SaaS solutions with the aim to offer enhanced control, process efficiency and cost reduction for business areas which historically have lacked these value-adds.
+                    <br><br>
+                </p>
+                <h2>Travel</h2>
+                <br>
+                <div class="small-line"></div>
+                <br>
+                <p>SAP Concur Travel is an integrated online travel booking tool that unites all travel information across the enterprise. Data from travelers’ favorite apps, credit cards, and vendors are all integrated into one environment. With all the data in one place, it’s easier to monitor spending, gain insights, ensure compliance, and maintain duty of care.</p>
+                <br>
+                <h2>Expense</h2>
+                <br>
+                <div class="small-line"></div>
+                <br>
+                <p>With SAP Concur Expense Management, Finance regains control and granular visibility of expenses, reduce fraud and errors, and significantly reduce processing time. SAP Concur Expense utilizes state of the art technology to ensure faster expense submissions and reimbursements. A solution that puts both the employee and the company first.</p>
+                <br>
+                <h2>Invoice</h2>
+                <br>
+                <div class="small-line"></div>
+                <br>
+                <p>SAP Concur Invoice is a smart Purchase Request/Order and Invoice Management solution. SAP Concur Invoice automates the invoice management process by helping businesses intelligently capture, validate, and pay vendor invoices at a fraction of the time.  All of this from one familiar environment. Your SAP Concur environment.</p>
+            </div>
+            <div (click)="routingService.openAccordionServices(2)" class="service-detail-accordion">
+                <div class="accordion-heading">
+                    <img [ngClass]="{'accordion-open': routingService.activeAccordionServices === 2, 'accordion-close': routingService.activeAccordionServices !== 2}" src="../../assets/icons/accordion.png">
+                    Integration
+                </div>
+            </div>
+            <div *ngIf="routingService.activeAccordionServices === 2" class="service-detail-accordion-content">
+                <p>
+                    Integration, whether it is via FTP, API, PaaS or custom-built connectors, is the backbone of any system functioning as expected. Without accurate data, any system looses its value proposition to an organization.  At ZENTAE, we strive to make integration easy, functional and cost effective. Our consultants work together with your team to architect a solution that allows your organization to be agile and respond to ever evolving business requirements. Our solutions are fully scalable and will grow alongside your business.
+                    <br><br>
+                    Ask us more about our services:
+                    <br><br>
+                </p>
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Integration Platform Assessment</span></li>
+                        <li><span>Cost/Benefit Analysis.</span></li>
+                        <li><span>Integration Readiness Assessment.</span></li>
+                        <li><span>Migration Planning & Execution.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div (click)="routingService.openAccordionServices(3)" class="service-detail-accordion">
+                <div class="accordion-heading">
+                    <img [ngClass]="{'accordion-open': routingService.activeAccordionServices === 3, 'accordion-close': routingService.activeAccordionServices !== 3}" src="../../assets/icons/accordion.png">
+                    Managed Services
+                </div>
+            </div>
+            <div *ngIf="routingService.activeAccordionServices === 3" class="service-detail-accordion-content">
+                <p>
+                    Organizations tend to outsource support services for SaaS solutions due to the ever-increasing demand to reduce overheads, the technical expertise required to support SaaS solutions and the basic premise that system support is not core business for most organizations.
+                    <br><br>
+                    Our proven managed services framework is built on the principles of customer satisfaction, data transparency, lean & efficient processes and ensuring best practices. ZENTAE Consulting operates and manages SAP Concur solutions for customers in multiple countries across different industries. Who better to manage and support your SaaS solution than the implementation partner that built it.
+                    <br><br>
+                    We offer managed services for:
+                    <br><br>
+                </p>
+                
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>All SAP Concur Products (Travel, Expense and Invoice)</span></li>
+                        <li><span>Integration Platform (FTP, API, native or PaaS)</span></li>
+                        <li><span>SAP Concur BI (IBM Cognos)</span></li>
+                        <li><span>Solution-Oriented Change Management</span></li>
+                    </ul>
+                </div>
+                <br>
+                <p>
+                    Our managed services framework includes:
+                    <br><br>
+                </p>
+
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Full integration with your service desk solution based for ticket-handover/ticket-binding.</span></li>
+                        <li><span>A comprehensive service catalogue.</span></li>
+                        <li><span>A flexible SLA framework.</span></li>
+                        <li><span>Up to 24/7 time-zone coverage.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div (click)="routingService.openAccordionServices(4)" class="service-detail-accordion">
+                <div class="accordion-heading">
+                    <img [ngClass]="{'accordion-open': routingService.activeAccordionServices === 4, 'accordion-close': routingService.activeAccordionServices !== 4}" src="../../assets/icons/accordion.png">
+                    Training & Change Management
+                </div>
+            </div>
+            <div *ngIf="routingService.activeAccordionServices === 4" class="service-detail-accordion-content">
+                <p>
+                    A software solution only realizes its full potential when the intended user base interacts with the solution as expected and its intended value can be delivered. Immersive training and change Management ensures that this user base is equipped with the relevant knowledge and insight required to achieve this expectation.
+                    <br><br>
+                    ZENTAE Consulting offers bespoke training and change management initiatives in the SAP solutions domain to ensure a successful go-live for all end-users.
+                    <br><br>
+                    Ask us more about our services:  
+                    <br><br>
+                </p>
+
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Training and Change Management Strategies</span></li>
+                        <li><span>Communication Templates (Digital & Print)</span></li>
+                        <li><span>Classroom Training (End-User, Super-User, Administrative Function)</span></li>
+                        <li><span>Interactive Digital Training</span></li>
+                        <li><span>Refresher Training Courses</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div (click)="routingService.openAccordionServices(5)" class="service-detail-accordion">
+                <div class="accordion-heading">
+                    <img [ngClass]="{'accordion-open': routingService.activeAccordionServices === 5, 'accordion-close': routingService.activeAccordionServices !== 5}" src="../../assets/icons/accordion.png">
+                    Business Process Optimization
+                </div>
+            </div>
+            <div *ngIf="routingService.activeAccordionServices === 5" class="service-detail-accordion-content">
+                <p>
+                    A software solution can maximize its return on investment if the business processes that are core to the solution are optimized. In order to fully optimize any software solution’s core and supporting processes, the processes firstly need to be understood, documented, analyzed and then finally optimized.
+                    <br><br>
+                    ZENTAE Consulting business analysts use state-of-the-art process documentation tools, leveraging off BPMN (Business Process Model and Notation) principles to document and understand your organization’s processes. Using our years of experience in the relevant business cycles such as Procure to Pay, Travel & Expense Management and Order to Cash, ZENTAE Consulting will optimize these processes to fully support your new SAP software solution.
+                    <br><br>
+                    Ask us more about our services:
+                    <br><br>
+                </p>
+
+                <div class="bullet-wrapper">
+                    <ul>
+                        <li><span>Business Process Optimization</span></li>
+                        <li><span>Business Process Automation</span></li>
+                        <li><span>Business Process Standardization</span></li>
+                        <li><span>Process Adoption and Change Management</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+</div>

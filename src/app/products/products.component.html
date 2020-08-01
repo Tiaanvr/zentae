@@ -1,0 +1,394 @@
+<img width="100%" src="../../assets/icons/group.png" class="about-image"/>
+<div class="products-info">
+    <div class="content-container">
+        <h1 id="productFocus" class="heading">Our Products</h1>
+        <p class="paragrah">
+            Our services are aimed at ensuring successful software implementations for our clients from start to finish.
+        </p>
+        <br><br>
+    </div>
+</div>
+<div class="product-under">
+    <div class="product-detail-block">
+
+        <div class="product-tabs-wrapper">
+            <div (click)="routingService.setActiveProduct(0)" [ngClass]="{'active': routingService.activeItemProducts === 0}" class="product-tabs">
+                <div class="text">Travel</div>
+            </div>
+            <div (click)="routingService.setActiveProduct(1)" [ngClass]="{'active': routingService.activeItemProducts === 1}" class="product-tabs">
+                <div class="text">Expense</div>
+            </div>
+            <div (click)="routingService.setActiveProduct(2)" [ngClass]="{'active': routingService.activeItemProducts === 2}" class="product-tabs">
+                <div class="text">Invoice</div>
+            </div>
+        </div>
+
+        <div *ngIf="routingService.activeItemProducts === 0" class="tabs-content">
+            <h1 class="heading">Concur Travel Value Proposition</h1>
+            <div class="small-line"></div>
+            <br>
+            <p>
+                SAP Concur Travel unites all travel information across the enterprise, from travelers’ favorite apps, credit cards, and vendors. With all the data in one place, it’s easier to monitor spending, gain insights, ensure compliance, and maintain duty of care.
+                <br><br>
+            </p>
+            <h1 class="heading">Key Benefits</h1>
+            <div class="small-line"></div>
+            <br>
+            <div class="bullet-wrapper">
+                <ul>
+                    <li><span>Live integrated online booking tool (OBT) with the ability to load all corporate travel agreements (air, hotel, car and transfers)</span></li>
+                    <li><span>Built-in company policy management that allows companies to control and monitor traveler behavior when booking business trips.</span></li>
+                    <li><span>An app center that allows travelers to connect with a plethora of 3rd party applications (TripIt, Uber, AirBnB etc.).</span></li>
+                    <li><span>Seamless integration with Concur Expense and Invoice for a complete view of T&E spend.</span></li>
+                    <li><span>Ability to capture full itinerary information, even for travel booked outside of managed channels (TMC, OBT).</span></li>
+                    <li><span>A Concur mobile app that provides users with a travel assistant on-the-go, with itinerary, real-time flight information, points tracking, and more.</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div *ngIf="routingService.activeItemProducts === 1" class="tabs-content">
+            <h1 class="heading">Concur Expense Value Proposition</h1>
+            <div class="small-line"></div>
+            <br>
+            <p>
+                With SAP Concur Expense, Finance regains control and granular visibility of expenses, reduce fraud and errors, and significantly reduce reimbursement time. A solution that puts both the employee and the company first.
+                <br><br>
+            </p>
+            <h1 class="heading">Key Benefits</h1>
+            <div class="small-line"></div>
+            <br>
+
+            <div class="bullet-wrapper">
+                <ul>
+                    <li><span>Superior user experience (UX) simplifying expense claim creation, approval and tracking for travelers and managers.</span></li>
+                    <li><span>Simple, intuitive system administration view that allows admin staff to maintain the system without IT’s help.</span></li>
+                    <li><span>In-system company policy driven expense audits that improves compliance and reduces time spent by expense processors.</span></li>
+                    <li><span>User friendly customizable reports, dashboards, compliance reporting, and budgeting.</span></li>
+                    <li><span>On-the-go receipt capture with OCR on the Concur app that automatically sends data into expense reports, saving end-users time and improving accuracy.</span></li>
+                    <li><span>Using the Concur app allows travelers to create and managers to approve expense reports while on-the-go.</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div *ngIf="routingService.activeItemProducts === 2" class="tabs-content">
+            <h1 class="heading">Concur Invoice Value Proposition</h1>
+            <div class="small-line"></div>
+            <br>
+            <p>
+                Accounts Payable plays a crucial role in maximizing business performance by managing cash outflow. This task normally carries a significant administrative burden. SAP Concur Invoice automates the invoice management process by helping businesses intelligently capture,
+validate, and pay vendor invoices.
+                <br><br>
+            </p>
+            <h1 class="heading">Key Benefits</h1>
+            <div class="small-line"></div>
+            <br>
+
+            <div class="bullet-wrapper">
+                <ul>
+                    <li><span>Concur Invoice integrates directly into the SAP Concur suite of products (Travel/Expense) and reduces training required for use.</span></li>
+                    <li><span>All Concur Invoice dashboards and reports form part of the Concur reporting suite.</span></li>
+                    <li><span>Concur Invoice provides a Purchase Request/Order and Goods Receipting function that allows companies to manage indirect procurement through the Concur platform.</span></li>
+                    <li><span>Invoice Capture utilizes SAP Leonardo Machine Learning which combines OCR, machine learning and user validation to improve accuracy and human productivity.</span></li>
+                    <li><span>Concur Invoice offers an outsourced vendor payment option that reduces the burden of payment runs and supplier reconciliations.</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div *ngIf="routingService.activeItemProducts === 0" class="product-wrapper-bar about-desktop">
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-01.png">
+                </div>
+                <div class="heading">“Ranked” Leader</div>
+                <div class="info">by IDC MarketScape</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-02.png">
+                </div>
+                <div class="heading">51.8% market share</div>
+                <div class="info">is larger than all other solutions combined.</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-03.png">
+                </div>
+                <div class="heading">78% decrease</div>
+                <div class="info">time spent to book a business trip</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-04.png">
+                </div>
+                <div class="heading">290 000</div>
+                <div class="info">trips booked in Concur Travel on a busy day</div>
+            </div>
+        </div>
+
+        <div *ngIf="routingService.activeItemProducts === 0" class="product-wrapper-bar about-mobile">
+            <div class="slide-4">
+                <div id="slideshow-4">
+                    <div class="container-4">
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-01.png">
+                                </div>
+                                <div class="heading">“Ranked” Leader</div>
+                                <div class="info">by IDC MarketScape</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-02.png">
+                                </div>
+                                <div class="heading">51.8% market share</div>
+                                <div class="info">is larger than all other solutions combined.</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-03.png">
+                                </div>
+                                <div class="heading">78% decrease</div>
+                                <div class="info">time spent to book a business trip</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-04.png">
+                                </div>
+                                <div class="heading">290 000</div>
+                                <div class="info">trips booked in Concur Travel on a busy day</div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="routingService.activeItemProducts === 1" class="product-wrapper-bar about-desktop">
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-03.png">
+                </div>
+                <div class="heading">80% decrease</div>
+                <div class="info">in time spent on expense claim
+                    reviews and reimbursements</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-07.png">
+                </div>
+                <div class="heading">60% faster</div>
+                <div class="info">average time to complete
+                    and expense report</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-06.png">
+                </div>
+                <div class="heading">62% increase</div>
+                <div class="info">In employee adherence
+                    to company expense policy</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-05.png">
+                </div>
+                <div class="heading">691 000</div>
+                <div class="info">Reports processed in
+                    Concur Expense on a busy day</div>
+            </div>
+        </div>
+
+        <div *ngIf="routingService.activeItemProducts === 1" class="product-wrapper-bar about-mobile">
+            <div class="slide-4">
+                <div id="slideshow-4">
+                    <div class="container-4">
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-03.png">
+                                </div>
+                                <div class="heading">80% decrease</div>
+                                <div class="info">in time spent on expense claim
+                                    reviews and reimbursements</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-07.png">
+                                </div>
+                                <div class="heading">60% faster</div>
+                                <div class="info">average time to complete
+                                    and expense report</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-06.png">
+                                </div>
+                                <div class="heading">62% increase</div>
+                                <div class="info">In employee adherence
+                                    to company expense policy</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-05.png">
+                                </div>
+                                <div class="heading">691 000</div>
+                                <div class="info">Reports processed in
+                                    Concur Expense on a busy day</div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="routingService.activeItemProducts === 2" class="product-wrapper-bar about-desktop">
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-01.png">
+                </div>
+                <div class="heading">505%</div>
+                <div class="info">average five-year ROI</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-10.png">
+                </div>
+                <div class="heading">5 months</div>
+                <div class="info">average payback period</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-09.png">
+                </div>
+                <div class="heading">$15,418</div>
+                <div class="info">average annual
+                    benefits per 1,000 invoices</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-06.png">
+                </div>
+                <div class="heading">53% faster</div>
+                <div class="info">Processing time
+                    per invoice</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-07.png">
+                </div>
+                <div class="heading">51% faster</div>
+                <div class="info">average time to pay vendors</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-08.png">
+                </div>
+                <div class="heading">99% compliant</div>
+                <div class="info">compliance with
+                    procurement policies</div>
+            </div>
+            <div class="block">
+                <div class="image-block">
+                    <img src="../../assets/icons/image-03.png">
+                </div>
+                <div class="heading">29% decrease</div>
+                <div class="info">in IT staff time spent on to
+                    manage AP solutions</div>
+            </div>
+        </div>
+
+        <div *ngIf="routingService.activeItemProducts === 2" class="product-wrapper-bar about-mobile">
+            <div class="slide-7">
+                <div id="slideshow-7">
+                    <div class="container">
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-01.png">
+                                </div>
+                                <div class="heading">505%</div>
+                                <div class="info">average five-year ROI</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-10.png">
+                                </div>
+                                <div class="heading">5 months</div>
+                                <div class="info">average payback period</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-09.png">
+                                </div>
+                                <div class="heading">$15,418</div>
+                                <div class="info">average annual
+                                    benefits per 1,000 invoices</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-06.png">
+                                </div>
+                                <div class="heading">53% faster</div>
+                                <div class="info">Processing time
+                                    per invoice</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-07.png">
+                                </div>
+                                <div class="heading">51% faster</div>
+                                <div class="info">average time to pay vendors</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-08.png">
+                                </div>
+                                <div class="heading">99% compliant</div>
+                                <div class="info">compliance with
+                                    procurement policies</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="block">
+                                <div class="image-block">
+                                    <img src="../../assets/icons/image-03.png">
+                                </div>
+                                <div class="heading">29% decrease</div>
+                                <div class="info">in IT staff time spent on to
+                                    manage AP solutions</div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+
+</div>

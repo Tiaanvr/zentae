@@ -1,0 +1,317 @@
+@import '../../global-styles/mixins.scss';
+@import '../../global-styles/variables.scss';
+@import '../../global-styles/burger-bar.scss';
+
+.about-image {
+    display: block;
+    @include for-tablet-landscape-down{
+        height: 350px;
+    };
+}
+
+.paragrah {
+    color: $color-white;
+    width:370px;
+}
+
+.products-info {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    position: absolute;
+    top: 200px;
+    padding: 20px 180px;
+    @include for-tablet-landscape-down{
+        top: 110px;
+        padding: 20px 30px;
+    };
+}
+
+.product-under {
+    background-color: $color-button-border;
+    padding: 40px 180px;
+    @include for-tablet-landscape-down{
+        padding: 20px 30px;
+    };
+    display: flex;
+    justify-content: center;
+
+    .product-detail-block {
+        width: 780px;
+        margin-top: -250px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        @include for-tablet-landscape-down{
+            background-color: transparent;
+            box-shadow: none;
+            width: 100%;
+        };
+
+        .product-tabs-wrapper {
+            display: flex;
+            min-height: 80px;
+            color: $color-light-blue;
+            font-size: 16px;
+            font-family: $lato-font;
+            .product-tabs {
+                display: flex;
+                background-color: $color-button-border;
+                width: 100%;
+                cursor: pointer;
+                .text {
+                    margin: auto;
+                }
+            }
+            .active {
+                background-color: $color-services-blocks;
+            }
+            :hover {
+                background-color: $color-services-blocks;
+            }
+        }
+
+        .tabs-content {
+            padding: 30px;
+            background-color: $color-services-blocks;
+            .heading {
+                @include for-tablet-portrait-down{
+                    height: 55px;
+                }
+            }
+            .bullet-wrapper{
+                padding-bottom: 5px;
+                ul {
+                    margin-left: 16px;
+                }
+                li span {
+                    color: $color-white;
+                    font-family: "Lato", sans-serif;
+                    font-size: 12px;
+                    line-height: 25px;
+                }
+                li {
+                    color: $color-light-blue;
+                }
+            }
+            p {
+                color: $color-white;
+            }
+            h2 {
+                color: $color-white;
+            }
+        }
+
+        .about-mobile {
+            display: none!important;
+            @include for-tablet-landscape-down{
+                display: block!important;
+            };
+        }
+        .about-desktop {
+            @include for-tablet-landscape-down{
+                display: none!important;
+            };
+        }
+
+        .product-wrapper-bar {
+            width: 100%;
+            background-color: $color-white;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .block {
+                @include for-tablet-landscape-down{
+                    margin: auto;
+                };
+                .image-block {
+                    height: 50px;
+                }
+                .heading {
+                    font-size: 12px;
+                    font-weight: bold;
+                    font-family: $lato-font;
+                    padding-bottom: 8px;
+                }
+                .info {
+                    font-size: 10px;
+                    font-weight: normal;
+                    font-family: $lato-font;
+                }
+                width: 150px;
+                text-align: center;
+                padding: 20px;
+            }
+        }
+    }
+
+    .display-mobile {
+        display: none;
+        @include for-tablet-landscape-down{
+            display: block!important;
+        };
+    }
+}
+
+
+.slide-4 {
+    margin: 0 auto;
+    #slideshow-4 {
+        width:300px;
+        margin:0 auto;
+        overflow:hidden;
+    }
+    
+    .container-4 {
+        width:1200px; /* 300 x 4 */
+        position:relative;
+        -webkit-animation:slide4 12s ease-in-out infinite;
+        -moz-animation:slide4 12s ease-in-out infinite;
+        -ms-animation:slide4 12s ease-in-out infinite;
+        -o-animation:slide4 12s ease-in-out infinite;
+        animation:slide4 12s ease-in-out infinite;
+    }
+    
+    .container-4 section {
+        width:300px;
+        height:200px;
+        float:left;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .container-4 section:nth-child(1) {background-color:transparent;}
+    .container-4 section:nth-child(2) {background-color:transparent;}
+    .container-4 section:nth-child(3) {background-color:transparent;}
+    .container-4 section:nth-child(4) {background-color:transparent;}
+    
+    .container-4:checked {
+       animation-play-state:paused;
+       -webkit-animation-play-state:paused;
+    }
+    
+    @-webkit-keyframes slide4 {
+        0% {left:0;}
+        25% {left:-300px;}
+        50% {left:-600px;}
+        75% {left:-900px;}
+        100% {left:0;}
+    }
+    @-moz-keyframes slide4 {
+        0% {left:0;}
+        25% {left:-300px;}
+        50% {left:-600px;}
+        75% {left:-900px;}
+        100% {left:0;}
+    }
+    @-ms-keyframes slide4 {
+        0% {left:0;}
+        25% {left:-300px;}
+        50% {left:-600px;}
+        75% {left:-900px;}
+        100% {left:0;}
+    }
+    @-o-keyframes slide4 {
+        0% {left:0;}
+        25% {left:-300px;}
+        50% {left:-600px;}
+        75% {left:-900px;}
+        100% {left:0;}
+    }
+    @keyframes slide4 {
+        0% {left:0;}
+        25% {left:-300px;}
+        50% {left:-600px;}
+        75% {left:-900px;}
+        100% {left:0;}
+    }
+}
+
+.slide-7 {
+    margin: 0 auto;
+    #slideshow-7 {
+        width:300px;
+        margin:0 auto;
+        overflow:hidden;
+    }
+    
+    .container {
+        width:2100px; /* 300 x 7 */
+        position:relative;
+        -webkit-animation:slide 16s ease-in-out infinite;
+        -moz-animation:slide 16s ease-in-out infinite;
+        -ms-animation:slide 16s ease-in-out infinite;
+        -o-animation:slide 16s ease-in-out infinite;
+        animation:slide 16s ease-in-out infinite;
+    }
+    
+    .container section {
+        width:300px;
+        height:200px;
+        float:left;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .container section:nth-child(1) {background-color:transparent;}
+    .container section:nth-child(2) {background-color:transparent;}
+    .container section:nth-child(3) {background-color:transparent;}
+    .container section:nth-child(4) {background-color:transparent;}
+    .container section:nth-child(5) {background-color:transparent;}
+    .container section:nth-child(6) {background-color:transparent;}
+    .container section:nth-child(7) {background-color:transparent;}
+    
+    .container:checked {
+       animation-play-state:paused;
+       -webkit-animation-play-state:paused;
+    }
+    
+    @-webkit-keyframes slide {
+        0% {left:0;}
+        15% {left:-300px;}
+        29% {left:-600px;}
+        43% {left:-900px;}
+        57% {left:-1200px;}
+        71% {left:-1500px;}
+        86% {left:-1800px;}
+        100% {left:0;}
+    }
+    @-moz-keyframes slide {
+        0% {left:0;}
+        15% {left:-300px;}
+        29% {left:-600px;}
+        43% {left:-900px;}
+        57% {left:-1200px;}
+        71% {left:-1500px;}
+        86% {left:-1800px;}
+        100% {left:0;}
+    }
+    @-ms-keyframes slide {
+        0% {left:0;}
+        15% {left:-300px;}
+        29% {left:-600px;}
+        43% {left:-900px;}
+        57% {left:-1200px;}
+        71% {left:-1500px;}
+        86% {left:-1800px;}
+        100% {left:0;}
+    }
+    @-o-keyframes slide {
+        0% {left:0;}
+        15% {left:-300px;}
+        29% {left:-600px;}
+        43% {left:-900px;}
+        57% {left:-1200px;}
+        71% {left:-1500px;}
+        86% {left:-1800px;}
+        100% {left:0;}
+    }
+    @keyframes slide {
+        0% {left:0;}
+        15% {left:-300px;}
+        29% {left:-600px;}
+        43% {left:-900px;}
+        57% {left:-1200px;}
+        71% {left:-1500px;}
+        86% {left:-1800px;}
+        100% {left:0;}
+    }
+}

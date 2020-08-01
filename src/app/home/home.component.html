@@ -1,0 +1,120 @@
+<div class="home-container">
+    <div class="home-heading">
+        <div class="content-container">
+            <div class="flex-align">
+                <img src="../../assets/icons/zentae-logo.png" height="40px">
+                <div class="heading-alignment">
+                    <div class="heading-links">
+                        <div class="heading-items" (click)="routingService.setActiveItem('Home')" [ngClass]="{'heading-items-active': routingService.activeItem === 'Home'}">
+                            Home
+                        </div>
+                        <div class="heading-items" (click)="routingService.setActiveItem('Products')" [ngClass]="{'heading-items-active': routingService.activeItem === 'Products'}">
+                            Products
+                        </div>
+                        <div class="heading-items" (click)="routingService.setActiveItem('Services')" [ngClass]="{'heading-items-active': routingService.activeItem === 'Services'}">
+                            Services
+                        </div>
+                        <div class="heading-items" (click)="routingService.setActiveItem('About us')" [ngClass]="{'heading-items-active': routingService.activeItem === 'About us'}">
+                            About us
+                        </div>
+                        <div class="heading-items" pageScroll href="#contact" [ngClass]="{'heading-items-active': routingService.activeItem === 'Contact us'}">
+                            Contact us
+                        </div>
+                    </div>
+                </div>
+
+                <div class="burger-bar" [ngClass]="{'burger-bar-open': burgerOpen, 'burger-bar-closed': !burgerOpen}">
+                    <div class="menu__mobile">
+                        <div (click)="toggleBurger()" class="menu__mobile_button" [ngClass]="{'active': burgerOpen}">
+                            <span></span>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="burger-item-wrapper" *ngIf="burgerOpen">
+                        <div class="burger-items" [ngClass]="{'burger-active': routingService.activeItem === 'Home'}" (click)="sidebarNav('Home')" href="#">Home</div>
+                        <div class="burger-items" [ngClass]="{'burger-active': routingService.activeItem === 'Products'}" (click)="sidebarNav('Products')" href="#">Products</div>
+                        <div class="burger-items" [ngClass]="{'burger-active': routingService.activeItem === 'Services'}" (click)="sidebarNav('Services')" href="#">Services</div>
+                        <div class="burger-items" [ngClass]="{'burger-active': routingService.activeItem === 'About us'}" (click)="sidebarNav('About us')" href="#">About us</div>
+                        <div class="burger-items" (click)="contactUs()" >Contact us</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-home-content *ngIf="routingService.activeItem === 'Home'"></app-home-content>
+    <app-about *ngIf="routingService.activeItem === 'About us'"></app-about>
+    <app-services *ngIf="routingService.activeItem === 'Services'"></app-services>
+    <app-products *ngIf="routingService.activeItem === 'Products'"></app-products>
+
+    <div class="footer" id="contact">
+        <div class="content-container">
+            
+            <div class="footer-wrapper">
+                <div class="block-width">
+                    <div class="heading">
+                        <img height="30px" src="../../assets/icons/zentae-secondary.png">
+                    </div>
+                    <p class="links" (click)="routingService.setActiveItem('Products')">Products</p>
+                    <br>
+                    <p class="links" (click)="routingService.setActiveItem('Services')">Services</p>
+                    <br>
+                    <p class="links" (click)="routingService.setActiveItem('About us')">About Us</p>
+
+                    <div class="bee-text">
+                        B-BBEE Level 2 Contributor
+                    </div>
+                </div>
+
+                <div class="block-width">
+                    <div class="heading">
+                        <h2 class="description">Offices</h2>
+                    </div>
+                    <div class="country-wrapper">
+                        <div class="country-mobile">
+                            <p class="bold-p-1">South Africa</p>
+                            <p>32A Jellicoe Ave, Rosebank</p>
+                            <p>Johannesburg,</p>
+                            <p>2047</p>
+                        </div>
+                        <div class="country-mobile">
+                            <p class="bold-p-2">Australia</p>
+                            <p>Level 1, 10 Dorcas Street</p>
+                            <p>Melbourne,</p>
+                            <p>VIC 3205</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block-width">
+                    <div class="heading">
+                        <h2 class="description">Get in touch</h2>
+                    </div>
+                    <p class="bold-p">Contact Us</p>
+                    <br>
+                    <p>+27 76 673 3678
+                    </p>
+                    <p>info@zentae.com
+                    </p>
+                    <br>
+                    <p class="bold-p">We’ll give you a call</p>
+                    <input class="special-input" placeholder="Phone number..." />
+                    <button class="special-button">Submit</button>
+                    <br><br>
+                    <p class="bold-p">Follow Us</p>
+                    <img class="follow-us" src="../../assets/icons/linkedin.png">
+
+                    <div class="bee-text-mobile">
+                        B-BBEE Level 2 Contributor
+                    </div>
+                </div>
+            </div>
+            <div class="copywright">
+                Copyright © Zentae, 2020
+            </div>
+        </div>
+    </div>
+</div>
+
+
