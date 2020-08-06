@@ -10,7 +10,6 @@
     color: $color-text-primary;
     border: 1px solid $color-button-border;
     font-family: "Lato", sans-serif;
-    font-weight: 700px;
     cursor: pointer;
 }
 
@@ -23,7 +22,6 @@
     color: $color-text-primary;
     border: 1px solid $color-button-border;
     font-family: "Lato", sans-serif;
-    font-weight: 700;
     cursor: pointer;
 }
 
@@ -84,4 +82,25 @@ p {
     height: 20px;
     border-bottom: 2px solid $color-light-blue;
     width: 20px;
+}
+
+.small-line-middel {
+    height: 20px;
+    border-bottom: 2px solid $color-light-blue;
+    width: 20px;
+    margin: 0 auto;
+}
+
+.show-mobile {
+    display: none;
+    @include for-phone-portrait-down {
+        display: block!important;
+    }
+}
+
+.hide-mobile {
+    display: block;
+    @include for-phone-portrait-down {
+        display: none!important;
+    }
 }

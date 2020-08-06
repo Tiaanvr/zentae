@@ -10,6 +10,13 @@
     }    
 }
 
+@mixin for-phone-portrait-down {
+    @media (max-width: 600px) {
+        @content;
+    }    
+}
+
+
 @mixin center-align {
     display: flex;
     justify-content: center;

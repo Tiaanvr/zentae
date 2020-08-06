@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="57" viewBox="0 0 66 57">
+    <defs>
+        <path id="prefix__a" d="M0 56.547L65.058 56.547 65.058 0 0 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#78FFD6" stroke-linecap="round" stroke-linejoin="round" d="M.499 8.435L64.557 8.435 64.557 4.156.499 4.156zM3.866 42.585L61.192 42.585 61.192 8.436 3.866 8.436z"/>
+        <path stroke="#78FFD6" stroke-linecap="round" d="M32.427.5h0c-1.382 0-2.501 1.12-2.501 2.501v1.154h5.002V3.001c0-1.382-1.12-2.5-2.501-2.5z"/>
+        <path stroke="#78FFD6" d="M38.888 42.583c-.23.86-.64 1.64-1.17 2.33l8.79 11.09-2.97.011-7.53-9.51c-1.06.67-2.3 1.07-3.63 1.07-1.25 0-2.41-.36-3.42-.95l-7.463 9.42-2.948-.04 8.64-10.9c-.61-.73-1.07-1.582-1.34-2.52"/>
+        <mask id="prefix__b" fill="#fff">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+        <path stroke="#78FFD6" d="M17.682 36.653L21.495 36.653 21.495 28.571 17.682 28.571zM24.146 36.653L27.959 36.653 27.959 25.02 24.146 25.02zM30.61 36.653L34.423 36.653 34.423 21.513 30.61 21.513zM37.075 36.653L40.888 36.653 40.888 19.179 37.075 19.179zM43.538 36.653L47.351 36.653 47.351 16.619 43.538 16.619z" mask="url(#prefix__b)"/>
+        <path stroke="#78FFD6" stroke-linecap="round" d="M14.408 39.146L50.65 39.146M17.681 24.857s15.701-5.93 21.446-12.983" mask="url(#prefix__b)"/>
+        <path stroke="#78FFD6" stroke-linecap="round" d="M39.128 15.339L39.128 11.873 35.662 11.873" mask="url(#prefix__b)"/>
+    </g>
+</svg>

@@ -2,12 +2,7 @@
 @import '../../global-styles/variables.scss';
 @import '../../global-styles/burger-bar.scss';
 
-.home-image {
-    display: block;
-    @include for-tablet-landscape-down{
-        height: 290px;
-    };
-}
+
 .paragrah {
     color: $color-white;
     width:100%;
@@ -95,7 +90,8 @@
         }
         .product-items:nth-child(1) {
             @include for-tablet-landscape-down{
-                margin-left: 120px!important;
+                // margin-left: 120px!important;
+                margin-left: 20%!important;
             };
         }
 
@@ -106,7 +102,7 @@
                 display: block!important;
             };
             margin: 20px;
-            width: 80px;
+            width: 40px;
             height: 340px;
             background-color: transparent;
         }
@@ -225,13 +221,14 @@
                 display: block!important;
             };
             margin: 20px;
-            width: 80px;
+            width: 40px;
             height: 340px;
             background-color: transparent;
         }
         .service-items:nth-child(1) {
             @include for-tablet-landscape-down{
-                margin-left: 120px!important;
+                // margin-left: 120px!important;
+                margin-left: 20%!important;
             }
         }
     }
