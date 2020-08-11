@@ -99,8 +99,8 @@
                     </p>
                     <br>
                     <p class="bold-p">We’ll give you a call</p>
-                    <input class="special-input" placeholder="Phone number..." />
-                    <button class="special-button">Submit</button>
+                    <input (keyup)="setNumber($event.target.value)" class="special-input" placeholder="Phone number..." />
+                    <button (click)="onSubmit()" class="special-button">Submit</button>
                     <br><br>
                     <p class="bold-p">Follow Us</p>
                     <img class="follow-us" src="../../assets/icons/linkedin.png">
